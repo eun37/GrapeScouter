@@ -58,6 +58,7 @@ function getToday() {
   } else {
     day = ('0' + (date.getDate() - 1)).slice(-2);
   }
+  document.getElementById("date").innerHTML = `${year}-${month}-${day}`;
   return `${year}-${month}-${day}`;
 }
 
