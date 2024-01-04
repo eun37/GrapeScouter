@@ -33,11 +33,3 @@
     url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicBold.ttf') format("truetype");
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'ELLA';
-  font-weight: 500;
-  font-style: normal;
-  src: url('../fonts/엘라.ttf');
-  font-display: swap;
-}
