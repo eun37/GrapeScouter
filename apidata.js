@@ -3,12 +3,12 @@ let txva = '';
 
 function getToday() {
   const date = new Date();
-  let hour = new Date().getHours();
+  let hour = date.getHours();
   let year = date.getFullYear();
   let month = ('0' + (date.getMonth() + 1)).slice(-2);
   let day;
   if (Number(hour) < 1) {
-    day = ('0' + date.getDate()).slice(-2);
+    day = ('0' + (date.getDate() - 2)).slice(-2);
   } else if (Number(hour) >= 1) {
     day = ('0' + (date.getDate() - 1)).slice(-2);
   }
@@ -55,8 +55,6 @@ function getToday() {
         case '12': day = '31'; break;
       }
     }
-  } else {
-    day = ('0' + (date.getDate() - 1)).slice(-2);
   }
   document.getElementById("date").innerHTML = `${year}/${month}/${day}`;
   return `${year}-${month}-${day}`;
