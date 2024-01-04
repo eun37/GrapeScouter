@@ -58,11 +58,11 @@ function getToday() {
   } else {
     day = ('0' + (date.getDate() - 1)).slice(-2);
   }
+  document.getElementById("date").innerHTML = `${year}/${month}/${day}`;
   return `${year}-${month}-${day}`;
 }
 
 let todayvalue = getToday();
-document.getElementById("date").innerHTML = todayvalue;
 let fun_res = 0;
 
 function numberToKorean(number) {
