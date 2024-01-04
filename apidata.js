@@ -227,11 +227,11 @@ btn.onclick = () => {
       }, 740);
       fun_res++;
     } else if (fun_res > 0) {
+      document.getElementById(`char_image`).src = 'https://th.bing.com/th/id/R.9a981ce34f9140f665dbfc98df12eaa7?rik=vqi7Q%2bLw1N5NMA&riu=http%3a%2f%2fpostfiles7.naver.net%2f20131027_230%2fmimi5527_1382857144898o7avf_PNG%2f1382857142188_PicsArt_1382236000731.png%3ftype%3dw3&ehk=RjQURca2zi2pXUZhMCanJQRsfJlRNwMQ8DJFSlh20yM%3d&risl=&pid=ImgRaw&r=0';
       document.getElementById('result').style.animation = `result_transition_out 750ms normal 1 ease-in-out`;
       document.getElementById(`char_image`).style.animation = `result_transition_out 750ms normal 1 ease-in-out`;
       setTimeout(function() {
         document.getElementById('result').innerHTML = `캐릭터명을 입력해주세요!`;
-        document.getElementById(`char_image`).src = 'https://th.bing.com/th/id/R.9a981ce34f9140f665dbfc98df12eaa7?rik=vqi7Q%2bLw1N5NMA&riu=http%3a%2f%2fpostfiles7.naver.net%2f20131027_230%2fmimi5527_1382857144898o7avf_PNG%2f1382857142188_PicsArt_1382236000731.png%3ftype%3dw3&ehk=RjQURca2zi2pXUZhMCanJQRsfJlRNwMQ8DJFSlh20yM%3d&risl=&pid=ImgRaw&r=0';
       }, 374)
       setTimeout(function() {
         document.getElementById(`char_image`).style.opacity = '1';
