@@ -188,7 +188,7 @@ function getUser(username) {
           if (fun_res == 0) {
             document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도`;
             if (textbox.value == '황금맛포도') {
-              document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 5px;">(숯과자)</span>`
+              document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(숯과자)</span>`
             }
             document.getElementById('result').style.animation = `result_transition 750ms normal 1 ease-in-out`;
             setTimeout(function() {
@@ -200,7 +200,7 @@ function getUser(username) {
             setTimeout(function() {
               document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도`;
               if (textbox.value == '황금맛포도') {
-                document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 5px;">(숯과자)</span>`
+                document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(숯과자)</span>`
               }
             }, 374)
             setTimeout(function() {
