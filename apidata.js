@@ -187,6 +187,9 @@ function getUser(username) {
           let result_kor = numberToKorean(myJson.final_stat[42].stat_value);
           if (fun_res == 0) {
             document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도`;
+            if (textbox.value == '황금맛포도') {
+              document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 5px;">(숯과자)</span>`
+            }
             document.getElementById('result').style.animation = `result_transition 750ms normal 1 ease-in-out`;
             setTimeout(function() {
               document.getElementById('result').style.opacity = '1';
@@ -196,6 +199,9 @@ function getUser(username) {
             document.getElementById('result').style.animation = `result_transition_out 750ms normal 1 ease-in-out`;
             setTimeout(function() {
               document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도`;
+              if (textbox.value == '황금맛포도') {
+                document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 5px;">(숯과자)</span>`
+              }
             }, 374)
             setTimeout(function() {
               document.getElementById('result').style.opacity = '1';
