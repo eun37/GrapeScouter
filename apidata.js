@@ -155,6 +155,7 @@ function getUser(username) {
             lvl = level;
             explate = myJson.character_exp_late;
             elate = explate;
+            document.getElementById(`lvlresult`).innerHTML = `${lvl}레벨 ${elate}`;
             document.getElementById(`char_image`).style.animation = `result_transition 750ms normal 1 ease-in-out`;
             document.getElementById(`char_image`).src = myJson.character_image;
             if (myJson.character_image == null || myJson.character_image == undefined) {
@@ -191,12 +192,12 @@ function getUser(username) {
           let result = myJson.final_stat[42].stat_value / podo_force;
           let result_kor = numberToKorean(myJson.final_stat[42].stat_value);
           if (fun_res == 0) {
-            document.getElementById('result').innerHTML = `<span style="font-size: 25px;">${lvl}레벨 ${elate}</span><br>전투력 ${result_kor}<br>${(result).toFixed(1)}포도`;
+            document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도`;
             if (textbox.value == '황금맛포도') {
-              document.getElementById('result').innerHTML = `<span style="font-size: 25px;">${lvl}레벨 ${elate}</span><br>전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(숯과자)</span>`
+              document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(숯과자)</span>`
             }
             if (textbox.value == '원킬도적') {
-              document.getElementById('result').innerHTML = `<span style="font-size: 25px;">${lvl}레벨 ${elate}</span><br>전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(응가도적)</span>`
+              document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(응가도적)</span>`
             }
             document.getElementById('result').style.animation = `result_transition 750ms normal 1 ease-in-out`;
             setTimeout(function() {
@@ -206,12 +207,12 @@ function getUser(username) {
           } else if (fun_res > 0) {
             document.getElementById('result').style.animation = `result_transition_out 750ms normal 1 ease-in-out`;
             setTimeout(function() {
-              document.getElementById('result').innerHTML = `<span style="font-size: 25px;">${lvl}레벨 ${elate}</span><br>전투력 ${result_kor}<br>${(result).toFixed(1)}포도`;
+              document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도`;
               if (textbox.value == '황금맛포도') {
-                document.getElementById('result').innerHTML = `<span style="font-size: 25px;">${lvl}레벨 ${elate}</span><br>전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(숯과자)</span>`
+                document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(숯과자)</span>`
               }
               if (textbox.value == '원킬도적') {
-                document.getElementById('result').innerHTML = `<span style="font-size: 25px;">${lvl}레벨 ${elate}</span><br>전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(응가도적)</span>`
+                document.getElementById('result').innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)}포도<br><span style="font-size: 15px;">(응가도적)</span>`
               }
             }, 374)
             setTimeout(function() {
