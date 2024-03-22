@@ -1,6 +1,6 @@
 const apikey = "test_ee1a99573cc5493b867afdfc9942c6d8b0ee06bc6f1d5dae4708fc7464ce822175de9c7c948e71512dfcb2e838373f09";
 let txva = '';
-let lvl, elate, level, explate;
+let level, exprate;
 
 function getToday() {
   const date = new Date();
@@ -152,10 +152,8 @@ function getUser(username) {
         .then(myJson => {
           if (fun_res == 0) {
             level = myJson.character_level;
-            lvl = level;
-            explate = myJson.character_exp_late;
-            elate = explate;
-            document.getElementById(`lvlresult`).innerHTML = `${lvl}레벨 ${elate}`;
+            exprate = myJson.character_exp_rate;
+            document.getElementById(`lvlresult`).innerHTML = `${level}레벨 ${exprate}`;
             document.getElementById(`char_image`).style.animation = `result_transition 750ms normal 1 ease-in-out`;
             document.getElementById(`char_image`).src = myJson.character_image;
             if (myJson.character_image == null || myJson.character_image == undefined) {
