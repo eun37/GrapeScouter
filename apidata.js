@@ -170,6 +170,7 @@ function getUser(username) {
               document.getElementById(`char_image`).style.opacity = '1';
               document.getElementById(`char_image`).style.animationName = `None`;
             }, 740);
+          }
         })
 
       let req_url_status = `https://open.api.nexon.com/maplestory/v1/character/stat?ocid=${myJson.ocid}&date=${todayvalue}`;
