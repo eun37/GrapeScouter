@@ -1,6 +1,5 @@
 const apikey = "test_ee1a99573cc5493b867afdfc9942c6d8b0ee06bc6f1d5dae4708fc7464ce822175de9c7c948e71512dfcb2e838373f09";
 let txva = '';
-let level, exprate;
 
 function getToday() {
   const date = new Date();
@@ -151,8 +150,6 @@ function getUser(username) {
         .then(res => res.json())
         .then(myJson => {
           if (fun_res == 0) {
-            document.getElementById(`lvlresult`).style.animation = `result_transition 750ms normal 1 ease-in-out`;
-            document.getElementById(`lvlresult`).innerHTML = `${myJson.character_level}레벨 ${myJson.character_exp_rate}`;
             document.getElementById(`char_image`).style.animation = `result_transition 750ms normal 1 ease-in-out`;
             document.getElementById(`char_image`).src = myJson.character_image;
             if (myJson.character_image == null || myJson.character_image == undefined) {
@@ -162,24 +159,17 @@ function getUser(username) {
               document.getElementById(`char_image`).style.opacity = '1';
             }, 740);
           } else if (fun_res > 0) {
-            document.getElementById(`lvlresult`).style.animation = `result_transition 750ms normal 1 ease-in-out`;
             document.getElementById(`char_image`).style.animation = `result_transition_out 750ms normal 1 ease-in-out`;
             setTimeout(function() {
-              document.getElementById(`lvlresult`).innerHTML = `${myJson.character_level}레벨 ${myJson.character_exp_rate}`;
               document.getElementById(`char_image`).src = myJson.character_image;
               if (myJson.character_image == null || myJson.character_image == undefined) {
                 document.getElementById(`char_image`).src = 'https://th.bing.com/th/id/R.9a981ce34f9140f665dbfc98df12eaa7?rik=vqi7Q%2bLw1N5NMA&riu=http%3a%2f%2fpostfiles7.naver.net%2f20131027_230%2fmimi5527_1382857144898o7avf_PNG%2f1382857142188_PicsArt_1382236000731.png%3ftype%3dw3&ehk=RjQURca2zi2pXUZhMCanJQRsfJlRNwMQ8DJFSlh20yM%3d&risl=&pid=ImgRaw&r=0';
               }
             }, 374);
             setTimeout(function() {
-              document.getElementById(`lvlresult`).style.opacity = '1';
-              document.getElementById(`lvlresult`).style.animationName = `None`;
               document.getElementById(`char_image`).style.opacity = '1';
               document.getElementById(`char_image`).style.animationName = `None`;
             }, 740);
-            if (textbox.value == '') {
-              document.getElementById(`lvlresult`).innerHTML = '';
-          }
         })
 
       let req_url_status = `https://open.api.nexon.com/maplestory/v1/character/stat?ocid=${myJson.ocid}&date=${todayvalue}`;
