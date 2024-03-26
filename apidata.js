@@ -56,7 +56,7 @@ function getToday() {
       }
     }
   }
-  document.getElementById("date").innerHTML = `<span style="color: red;">실시간</span>`;
+  document.getElementById("date").innerHTML = `<span style="color: #ff9696;">실시간</span>`;
   // document.getElementById("date").innerHTML = `${year}/${month}/${day}`;
   return `${year}-${month}-${day}`;
 }
