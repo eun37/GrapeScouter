@@ -56,7 +56,8 @@ function getToday() {
       }
     }
   }
-  document.getElementById("date").innerHTML = `${year}/${month}/${day}`;
+  document.getElementById("date").innerHTML = `<span style="color: skyblue;">실시간</span>`;
+  // document.getElementById("date").innerHTML = `${year}/${month}/${day}`;
   return `${year}-${month}-${day}`;
 }
 
@@ -93,7 +94,7 @@ const btn = document.getElementById('btn');
 const textbox = document.getElementById('textbox');
 
 function get_podo() {
-  fetch(`https://open.api.nexon.com/maplestory/v1/character/stat?ocid=c5bc6048ce6b33728fce893890bc431defe8d04e6d233bd35cf2fabdeb93fb0d&date=${todayvalue}`, {
+  fetch(`https://open.api.nexon.com/maplestory/v1/character/stat?ocid=c5bc6048ce6b33728fce893890bc431defe8d04e6d233bd35cf2fabdeb93fb0d`, {
     method: 'GET',
     headers: {
       "x-nxopen-api-key": apikey
@@ -140,7 +141,7 @@ function getUser(username) {
           }, 740);
         }
       }
-      let req_url_image = `https://open.api.nexon.com/maplestory/v1/character/basic?ocid=${myJson.ocid}&date=${todayvalue}`;
+      let req_url_image = `https://open.api.nexon.com/maplestory/v1/character/basic?ocid=${myJson.ocid}`;
       fetch(req_url_image, {
         method: "GET",
         headers: {
@@ -173,7 +174,7 @@ function getUser(username) {
           }
         })
 
-      let req_url_status = `https://open.api.nexon.com/maplestory/v1/character/stat?ocid=${myJson.ocid}&date=${todayvalue}`;
+      let req_url_status = `https://open.api.nexon.com/maplestory/v1/character/stat?ocid=${myJson.ocid}`;
       fetch(req_url_status, {
         method: "GET",
         headers: {
