@@ -131,7 +131,18 @@ function getUser(username) {
     })
 }
 
+document.getElementById('asdfasdfasdf').addEventListener('keydown', function(event) {
+  if(event.key === 'Enter') {
+    event.preventDefault();
+    asdfasdf();
+  }
+})
+
 btn.onclick = () => {
+  asdfasdf();
+}
+
+function asdfasdf() {
   if (txva == textbox.value && textbox.value != '') {
     fun_res++;
     return;
