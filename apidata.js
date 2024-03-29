@@ -44,7 +44,7 @@ function get_podo() {
     .then(myJson => {
       const getpodo = myJson.final_stat[42].stat_value;
       podo_force = Number(getpodo);
-      document.getElementById('pdgij').innerHTML = `${numberToKorean(podo_force)}`;
+      document.getElementById("pdgij").innerHTML = `${numberToKorean(podo_force)}`;
     })
 }
 
