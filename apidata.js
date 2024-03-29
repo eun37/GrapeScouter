@@ -48,6 +48,8 @@ function get_podo() {
 }
 
 get_podo();
+const pdgij = numberToKorean(podo_force);
+document.getElementById('pdgij').innerHTML = `${pdgij}`;
 
 let ocid = '';
 let J0J4 = ['', ''];
