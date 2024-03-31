@@ -33,7 +33,7 @@ const textbox = document.getElementById('Character_name');
 const charinfores = document.getElementById('charinfores');
 const charimgres = document.getElementById('charimgres');
 
-function get_podo() {
+/* function get_podo() {
   fetch(`https://open.api.nexon.com/maplestory/v1/character/stat?ocid=c5bc6048ce6b33728fce893890bc431defe8d04e6d233bd35cf2fabdeb93fb0d`, {
     method: 'GET',
     headers: {
@@ -48,8 +48,9 @@ function get_podo() {
     })
 }
 
-get_podo();
+get_podo(); */
 podo_force = 2147483647;
+document.getElementById("pdgij").innerHTML = `${numberToKorean(podo_force)}`;
 
 let ocid = '';
 let J0J4 = ['', ''];
