@@ -49,6 +49,7 @@ function get_podo() {
 }
 
 get_podo();
+podo_force = 2147483647;
 
 let ocid = '';
 let J0J4 = ['', ''];
@@ -110,20 +111,22 @@ function getUser(username) {
           if (fun_res == 0) {
             charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도`;
             if (textbox.value == '황금맛포도') {
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`
+              // charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`;
+              charinfores.innerHTML = `전투력 21억4748만3647<br>1.0 포도<br>(숯과자)`;
             }
             if (textbox.value == '원킬도적') {
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(응가도적)`
+              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(응가도적)`;
             }
             fun_res++;
           } else if (fun_res > 0) {
             
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도`;
               if (textbox.value == '황금맛포도') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`
+                // charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`;
+                charinfores.innerHTML = `전투력 21억4748만3647<br>1.0 포도<br>(숯과자)`;
               }
               if (textbox.value == '원킬도적') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(응가도적)`
+                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(응가도적)`;
               }
             fun_res++;
           }
