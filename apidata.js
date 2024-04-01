@@ -33,7 +33,7 @@ const textbox = document.getElementById('Character_name');
 const charinfores = document.getElementById('charinfores');
 const charimgres = document.getElementById('charimgres');
 
-/* function get_podo() {
+function get_podo() {
   fetch(`https://open.api.nexon.com/maplestory/v1/character/stat?ocid=c5bc6048ce6b33728fce893890bc431defe8d04e6d233bd35cf2fabdeb93fb0d`, {
     method: 'GET',
     headers: {
@@ -48,9 +48,7 @@ const charimgres = document.getElementById('charimgres');
     })
 }
 
-get_podo(); */
-podo_force = 2147483647;
-document.getElementById("pdgij").innerHTML = `${numberToKorean(podo_force)}`;
+get_podo();
 
 let ocid = '';
 let J0J4 = ['', ''];
@@ -112,8 +110,7 @@ function getUser(username) {
           if (fun_res == 0) {
             charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도`;
             if (textbox.value == '황금맛포도') {
-              // charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`;
-              charinfores.innerHTML = `전투력 21억4748만3647<br>1.0 포도<br>(숯과자)`;
+              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`;
             }
             if (textbox.value == '원킬도적') {
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(응가도적)`;
@@ -123,8 +120,7 @@ function getUser(username) {
             
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도`;
               if (textbox.value == '황금맛포도') {
-                // charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`;
-                charinfores.innerHTML = `전투력 21억4748만3647<br>1.0 포도<br>(숯과자)`;
+                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`;
               }
               if (textbox.value == '원킬도적') {
                 charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(응가도적)`;
