@@ -110,7 +110,7 @@ function getUser(username) {
           if (fun_res == 0) {
             charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도`;
             if (textbox.value == '황금맛포도') {
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`;
+              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>숯과자`;
             }
             if (textbox.value == '원킬도적') {
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-100억`;
@@ -126,7 +126,7 @@ function getUser(username) {
             
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도`;
               if (textbox.value == '황금맛포도') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>(숯과자)`;
+                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>숯과자`;
               }
               if (textbox.value == '원킬도적') {
                 charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-100억`;
