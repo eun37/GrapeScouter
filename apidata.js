@@ -113,13 +113,13 @@ function getUser(username) {
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>숯과자`;
             }
             if (textbox.value == '원킬도적') {
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-100억`;
+              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>응가도적`;
             }
             if (textbox.value == '별리링') {
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-30억`;
             }
             if (textbox.value == '설백찌') {
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-138억`;
+              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-60억`;
             }
             fun_res++;
           } else if (fun_res > 0) {
@@ -129,13 +129,13 @@ function getUser(username) {
                 charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>숯과자`;
               }
               if (textbox.value == '원킬도적') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-100억`;
+                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>응가도적`;
               }
               if (textbox.value == '별리링') {
                 charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-30억`;
               }
               if (textbox.value == '설백찌') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-138억`;
+                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-60억`;
               }
             fun_res++;
           }
