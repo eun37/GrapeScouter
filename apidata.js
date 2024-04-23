@@ -119,7 +119,7 @@ function getUser(username) {
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-30억`;
             }
             if (textbox.value == '설백찌') {
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-60억`;
+              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-58억`;
             }
             fun_res++;
           } else if (fun_res > 0) {
@@ -135,7 +135,7 @@ function getUser(username) {
                 charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-30억`;
               }
               if (textbox.value == '설백찌') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-60억`;
+                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-58억`;
               }
             fun_res++;
           }
