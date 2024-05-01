@@ -107,7 +107,7 @@ function getUser(username) {
 
           let result = myJson.final_stat[42].stat_value / podo_force;
           let result_kor = numberToKorean(myJson.final_stat[42].stat_value);
-          if (fun_res == 0) {
+          if (fun_res >= 0) {
             charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도`;
             if (textbox.value == '황금맛포도') {
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>숯과자`;
@@ -115,28 +115,6 @@ function getUser(username) {
             if (textbox.value == '원킬도적') {
               charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>응가도적`;
             }
-            /* if (textbox.value == '별리링') {
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-30억`;
-            }
-            if (textbox.value == '설백찌') {
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-58억`;
-            } */
-            fun_res++;
-          } else if (fun_res > 0) {
-            
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도`;
-              if (textbox.value == '황금맛포도') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>숯과자`;
-              }
-              if (textbox.value == '원킬도적') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>응가도적`;
-              }
-              /* if (textbox.value == '별리링') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-30억`;
-              }
-              if (textbox.value == '설백찌') {
-                charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도<br>-58억`;
-              } */
             fun_res++;
           }
         })
