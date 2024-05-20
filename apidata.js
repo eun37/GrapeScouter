@@ -1,5 +1,5 @@
 const apikey = "test_ee1a99573cc5493b867afdfc9942c6d8b0ee06bc6f1d5dae4708fc7464ce822175de9c7c948e71512dfcb2e838373f09";
-let txva = '';
+let txva = '', txva2 = '';
 let fun_res = 0;
 
 function numberToKorean(number) {
@@ -254,13 +254,13 @@ function asdfasdf() {
 }
 
 function asdfasdf2() {
-  if (txva == textbox2.value && textbox2.value != '') {
+  if (txva2 == textbox2.value && textbox2.value != '') {
     fun_res++;
     return;
   }
-  txva = textbox2.value;
-  if (txva != '') {
-    getUser2(txva);
+  txva2 = textbox2.value;
+  if (txva2 != '') {
+    getUser2(txva2);
   } else {
     if (fun_res == 0) {
       charinfores2.innerHTML = `캐릭터명을 입력해주세요!`;
