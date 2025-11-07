@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>포도 환산기</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+		<style>
+			.br {
+                display: block;
+			}
+		</style>
+	</head>
+	<body class="is-preload" style="user-select: none;">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon"><img src="GrapeIcon.png" style="width: 50%; height: 60%; transform: translateY(33%); background-color: #00000000"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>과자 환산기</span></h1>
+								<p style="font-size: 15px;"><div class="br"></div>API 일일 호출량을 초과할 경우 작동하지 않을 수 있습니다.<div class="br"></div>
+								2023/12/21 이후 접속 기록이 없는 캐릭터는 이용이 불가능합니다.<div class="br"></div>
+								현재 데이터 기준일은 <span style="color: #c96d6d; font-weight: 700;">실시간</span> 입니다.<div class="br"></div>
+								1포도 = <span id="pdgij"></span>, 1과자 = <span id="mggij"></span></p>
+							</div>
+						</div>
+						<nav>
+							<ul style="font-weight: 700;">
+								<li><a href="#intro">패치 내역</a></li>
+								<li><a href="#work">포도 환산기</a></li>
+								<li><a href="#work2">과자 환산기 <span style="font-size: 12px; color: yellowgreen;">[BETA]</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">패치 내역</h2>
+								<span class="image main"><img src="pic03.jpg" alt="" /></span>
+								<p>· 2024/03/27(수)<br>
+								<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">포도 환산기 이용 시 캐릭터 정보를 실시간으로 조회하도록 변경했습니다.</span></p>
+								<p>· 2024/03/29(금)<br>
+								<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">페이지를 전반적으로 리뉴얼하는 작업을 진행했습니다.<br><span style="color: skyblue;">+ 데스크탑 환경에서 더욱 쾌적하게 이용할 수 있습니다.</span></span></p>
+								<p>· 2024/05/20(월)<br>
+									<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">망고 환산기가 추가되었습니다.</span></p>
+                                <p>· 2025/11/07(금) <span style="color: gold;">[NEW]</span><br>
+                                    <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">망고 환산기가 제거되고, 최신 전투력 트렌드를 반영한 과자 환산기가 추가되었습니다.</span></p>
+							</article>
+							
+							<article id="work" class="active">
+								<h2 class="major">포도 환산기</h2>
+								<form method="post" action="#" id="asdfasdfasdf">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">캐릭터명</label>
+											<input hidden="hidden" />
+											<input type="text" name="name" id="Character_name">
+										</div>
+										<div class="field half">
+
+										</div>
+										<div class="field half">
+											<label for="char_info">캐릭터 정보</label>
+											<p id="charinfores" style="font-size: 20px;">전투력 -<br>- 포도</p>
+										</div>
+										<div class="field half">
+											<label for="char_img">캐릭터 이미지</label>
+											<img src="" id="charimgres">
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input id="charsetonbtn" type="button" value="확인"></li>
+									</ul>
+								</form>
+							</article>
+
+							<article id="work2" class="active">
+								<h2 class="major">과자 환산기</h2><p style="transform:translateY(-50%); font-size: 14px; color: #777777;">280레벨 기준 유저 평균 전투력을 기준으로 계산합니다.</p>
+								<form method="post" action="#" id="asdfasdfasdf2">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">캐릭터명</label>
+											<input hidden="hidden" />
+											<input type="text" name="name" id="Character_name2">
+										</div>
+										<div class="field half">
+
+										</div>
+										<div class="field half">
+											<label for="char_info2">캐릭터 정보</label>
+											<p id="charinfores2" style="font-size: 20px;">전투력 -<br>- 망고</p>
+										</div>
+										<div class="field half">
+											<label for="char_img2">캐릭터 이미지</label>
+											<img src="" id="charimgres2">
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input id="charsetonbtn2" type="button" value="확인"></li>
+									</ul>
+								</form>
+							</article>
+
+                            <!--
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article-->
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 쓰담콩@엘리시움 <br />
+						DATA BASED ON <a><span style="font-weight: bold;" onclick="window.open('about:blank').location.href = 'https://openapi.nexon.com/'"><span style="color: skyblue;">NEXON</span> OPEN API</span></a></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="jquery.min.js"></script>
+			<script src="browser.min.js"></script>
+			<script src="breakpoints.min.js"></script>
+			<script src="util.js"></script>
+			<script src="main.js"></script>
+			<script src="apidata.js"></script>
+
+	</body>
+</html>
