@@ -67,7 +67,7 @@ function get_Cookie() {
       document.getElementById("mggij").innerHTML = `${numberToKorean(Cookie_force)}`;
     }) */
 
-    Cookie_force = 65920365;
+    Cookie_force = 59235607;
     document.getElementById("mggij").innerHTML = `${numberToKorean(Cookie_force)}`;
 }
 
