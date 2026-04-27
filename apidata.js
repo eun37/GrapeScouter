@@ -194,9 +194,9 @@ function getUser(username) {
           let result = myJson.final_stat[42].stat_value / podo_force;
           let result_kor = numberToKorean(myJson.final_stat[42].stat_value);
           if (fun_res >= 0) {
-            charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 똥`;
+            charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 포도`;
             if (textbox.value == '황금맛포도') {
-              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} <span style="color: #773300; font-weight: bold;">똥</span><br>`;
+              charinfores.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} <span style="color: #773300; font-weight: bold;">똥포도</span><br>`;
             }
             fun_res++;
           }
