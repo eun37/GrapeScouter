@@ -129,7 +129,7 @@ function getUser2(username) {
           let result = myJson.final_stat[42].stat_value / Cookie_force;
           let result_kor = numberToKorean(myJson.final_stat[42].stat_value);
           if (fun_res >= 0) {
-            charinfores2.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 과자`;
+            charinfores2.innerHTML = `전투력 ${result_kor}<br>${(result).toFixed(1)} 콩`;
             fun_res++;
           }
         })
