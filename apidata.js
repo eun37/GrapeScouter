@@ -54,7 +54,7 @@ function get_podo() {
 }
 
 function get_Cookie() {
-  /* fetch(`https://open.api.nexon.com/maplestory/v1/character/stat?ocid=c7a63ee5962a01a7f5ba258560fbd27befe8d04e6d233bd35cf2fabdeb93fb0d`, {
+  fetch(`https://open.api.nexon.com/maplestory/v1/character/stat?ocid=c7a63ee5962a01a7f5ba258560fbd27befe8d04e6d233bd35cf2fabdeb93fb0d`, {
     method: 'GET',
     headers: {
       "x-nxopen-api-key": apikey
@@ -65,10 +65,7 @@ function get_Cookie() {
       const getCookie = myJson.final_stat[42].stat_value;
       Cookie_force = Number(getCookie);
       document.getElementById("mggij").innerHTML = `${numberToKorean(Cookie_force)}`;
-    }) */
-
-    Cookie_force = 56063523;
-    document.getElementById("mggij").innerHTML = `${numberToKorean(Cookie_force)}`;
+    })
 }
 
 get_podo();
